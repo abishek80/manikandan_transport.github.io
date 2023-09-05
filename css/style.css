@@ -76,7 +76,7 @@
 .navbar .navbar-nav .nav-link {
     margin-left: 30px;
     padding: 25px 0;
-    color: var(--secondary);
+    color: #000;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
@@ -197,7 +197,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/banner.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -231,8 +231,8 @@
 }
 
 
-/*** Service ***/
-.service-text::before {
+/*** Category ***/
+.category-text::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -244,25 +244,25 @@
     transition: .5s;
 }
 
-.service-item:hover .service-text::before {
+.category-item:hover .category-text::before {
     height: 100%;
     opacity: 1;
 }
 
-.service-text * {
+.category-text * {
     position: relative;
     transition: .5s;
     z-index: 1;
 }
 
-.service-item:hover .service-text * {
+.category-item:hover .category-text * {
     color: #FFFFFF !important;
 }
 
 
 /*** Appointment ***/
 .appointment {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-3.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -270,14 +270,10 @@
 /*** Team ***/
 .team-text {
     position: absolute;
-    width: 75%;
-    bottom: 30px;
-    left: 0;
+    width: 90%;
+    bottom: 20px;
+    left: 17.5px;
     transition: .5s;
-}
-
-.team-item:hover .team-text {
-    width: 100%;
 }
 
 .team-text * {
@@ -366,4 +362,12 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+.rounded-5 {
+    border-radius: 5px;
+}
+
+.rounded-10 {
+    border-radius: 10px;
 }
